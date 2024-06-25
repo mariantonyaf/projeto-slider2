@@ -1,1 +1,34 @@
 @charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e5e5e5;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 50px;
+}
+
+.carrossel{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.item{
+    width: 100px;
+    height: 50px;
+}
