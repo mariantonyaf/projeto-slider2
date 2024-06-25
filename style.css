@@ -8,6 +8,7 @@
 
 body{
     background-color: #e5e5e5;
+    overflow: hidden;
 }
 
 main{
@@ -34,6 +35,8 @@ main{
     position: absolute;
     left: 100%;
     animation: autoRun 10s linear infinite;
+    animation-delay: var(--delay);
+    cursor: pointer;
 }
 
 .item img{
