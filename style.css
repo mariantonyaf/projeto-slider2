@@ -35,8 +35,12 @@ main{
     position: absolute;
     left: 100%;
     animation: autoRun 10s linear infinite;
-    animation-delay: var(--delay);
+    animation-delay: var(--delay) !important;
     cursor: pointer;
+}
+
+.container.reverse .item{
+    animation: reverseRun 10s linear infinite;
 }
 
 .item img{
@@ -50,5 +54,15 @@ main{
 
     to{
         left: -50px;
+    }
+}
+
+@keyframes reverseRun {
+    from{
+        left: -200px;
+    }
+
+    to{
+        left: 100%;
     }
 }
