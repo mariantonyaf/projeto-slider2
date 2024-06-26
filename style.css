@@ -18,9 +18,14 @@ main{
     width: 100%;
 }
 
+.banner{
+    height: 450px;
+}
+
 .container{
     width: 100%;
     height: var(--height);
+    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
 }
 
 .carrossel{
@@ -45,6 +50,15 @@ main{
 
 .item img{
     width: 100%;
+}
+
+.container:hover .item{
+    animation-play-state: paused;
+    filter: grayscale(1);
+}
+
+.container .item:hover{
+    filter: grayscale(0);
 }
 
 @keyframes autoRun {
